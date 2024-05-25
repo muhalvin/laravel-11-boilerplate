@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="{{ config('app.locale') }}" class="light-style layout-wide" dir="ltr" data-theme="theme-default" data-assets-path="{{ asset('') }}assets/" data-template="vertical-menu-template-free">
+<html lang="{{ config('app.locale') }}" class="light-style layout-wide customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="{{ asset('') }}assets/"
+    data-template="vertical-menu-template-free">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Error &mdash; {{ config('app.name') }}</title>
+    <title>Auth &mdash; {{ config('app.name') }}</title>
 
     <meta name="description" content="" />
 
@@ -24,23 +25,32 @@
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/css/demo.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/css/custom.css" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
     <!-- Page CSS -->
     <!-- Page -->
-    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/css/pages/page-misc.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/css/pages/page-auth.css" />
 
     <!-- Helpers -->
     <script src="{{ asset('') }}assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="{{ asset('') }}assets/js/config.js"></script>
 </head>
 
 <body>
     <!-- Content -->
 
-    {{ $slot }}
+    <div class="container-xxl">
+        <div class="authentication-wrapper authentication-basic container-p-y">
+            <div class="authentication-inner">
+                {{ $slot }}
+            </div>
+        </div>
+    </div>
 
     <!-- / Content -->
 
