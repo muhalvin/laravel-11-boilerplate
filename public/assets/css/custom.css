@@ -1,3 +1,23 @@
 .text-danger {
     color: #b91c1c;
 }
+
+.text-primary {
+    color: rgb(30 64 175);
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
