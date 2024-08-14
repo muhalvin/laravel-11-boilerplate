@@ -5,7 +5,6 @@
 
             <x-logo />
 
-            <h4 class="mb-2">Welcome to Sneat! 👋</h4>
             <p class="mb-4">Please sign-in to your account and start the adventure</p>
 
             <x-auth-session-status class="mb-1" :status="session('status')" />
@@ -30,7 +29,7 @@
                     <div class="input-group input-group-merge">
                         <input type="password" id="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                             aria-describedby="password" />
-                        <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                        <span class="cursor-pointer input-group-text"><i class="bx bx-hide"></i></span>
                     </div>
 
                     <x-input-error :messages="$errors->get('password')" class="mt-2" />
