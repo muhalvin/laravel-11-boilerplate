@@ -15,9 +15,9 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('/') }}assets/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('/') }}assets/vendor/fonts/boxicons.css" />
 
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{{ asset('/') }}assets/vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="{{ asset('/') }}assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="{{ asset('/') }}assets/css/demo.css" />
+    <link rel="stylesheet" href="{{ asset('/') }}assets/css/custom.css" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('/') }}assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -45,7 +46,7 @@
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
 
-            <x-sidebar />
+            @include('layouts.menu.main')
 
             <div class="layout-page">
 
@@ -67,20 +68,13 @@
         <div class="layout-overlay layout-menu-toggle"></div>
     </div>
 
-    <div class="buy-now">
-        <a href="https://themeselection.com/item/sneat-bootstrap-html-admin-template/" target="_blank" class="btn btn-danger btn-buy-now">Upgrade to Pro</a>
-    </div>
-
     <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
 
     <script src="{{ asset('/') }}assets/vendor/libs/jquery/jquery.js"></script>
     <script src="{{ asset('/') }}assets/vendor/libs/popper/popper.js"></script>
     <script src="{{ asset('/') }}assets/vendor/js/bootstrap.js"></script>
     <script src="{{ asset('/') }}assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="{{ asset('/') }}assets/vendor/js/menu.js"></script>
-
-    <!-- endbuild -->
 
     <!-- Vendors JS -->
     <script src="{{ asset('/') }}assets/vendor/libs/apex-charts/apexcharts.js"></script>

@@ -21,3 +21,22 @@
 .text-center {
     text-align: center;
 }
+
+body,
+div,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+tr {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+.swal2-container {
+    z-index: 1100;
+}

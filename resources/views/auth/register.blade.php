@@ -4,9 +4,6 @@
 
             <x-logo />
 
-            <h4 class="mb-2">Adventure starts here 🚀</h4>
-            <p class="mb-4">Make your app management easy and fun!</p>
-
             <form id="formAuthentication" class="mb-3" action="{{ route('register') }}" method="POST">
                 @csrf
                 <div class="mb-3">
@@ -34,7 +31,7 @@
                     <x-input-label for="password" class="form-label" :value="__('password')" />
                     <div class="input-group input-group-merge">
                         <x-text-input id="password" type="password" name="password" required placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
-                        <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                        <span class="cursor-pointer input-group-text"><i class="bx bx-hide"></i></span>
                     </div>
                 </div>
                 <x-input-error :messages="$errors->get('password')" class="mt-2" />
@@ -45,7 +42,7 @@
                     <div class="input-group input-group-merge">
                         <x-text-input id="password_confirmation" type="password" name="password_confirmation" required
                             placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
-                        <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                        <span class="cursor-pointer input-group-text"><i class="bx bx-hide"></i></span>
                     </div>
                 </div>
                 <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
